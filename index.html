@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIP CALCULATOR</title>
+    <title>My Movie Filter</title>
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 <body>
-    <div class="container"> 
-<h1>TIP CALCULATOR</h1>
-<p>Enter the bill amount and tip percentage and number of people to calculate the total.</p>
-<label for="bill" >Bill Amount:</label>
-<input type="number" id="bill">
-<br/>
-<label for="tip">Tip Percentage:</label>
-<input type="number" id="tip">
-<br/>
-<label for="people">Number Of People:</label>
-<input type="number" id="people">
-<br/>
-<button id="calculate">Calculate</button>
-<br/>
-<p>Total: <span id="total"></span></p>
-<p>Per Person: <span id="perPerson"></span></p>
-
-</div>
-<script src="index.js"></script>
+    <div class="container">
+    <h1>MovieGO Filter</h1>
+ <input id="search" type="text" placeholder="Search movies">
+ <select id="genre">
+<option value="all">All</option>
+<option value="action">Action</option>
+<option value="comedy">comedy</option>
+<option value="sci-fi">sci-fi</option>
+<option value="crime">Crime</option>
+<option value="romance">Romance</option>
+ </select>
+ <button id="topRated">Top Rated</button>
+  <ul id="movie-list"></ul>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
